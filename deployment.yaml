@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: risk-assessor
+  labels:
+    app: risk-assessor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: risk-assessor
+  template:
+    metadata:
+      labels:
+        app: risk-assessor
+    spec:
+      containers:
+      - name: risk-assessor
+        image: gcr.io/PROJECT_ID/riskassessor:latest
+        ports:
+        - containerPort: 8080
+
