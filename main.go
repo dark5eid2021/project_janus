@@ -13,7 +13,7 @@ import (
 // level based on some simle heuristics
 
 // future iterations needed - reading a live log tail and reading the code changes directly from git...
-// not relying on files
+// not relying on files...can the diff be read as part of a pre merge check?
 
 // LogFailure represents a failure event parsed from the logs
 type LogFailure struct {
