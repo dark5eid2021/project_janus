@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/dark5eid2021/project_janus.git'
     targetRevision: HEAD
-    path: path/to/your/manifests
+    path: path/to/my/manifests
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
